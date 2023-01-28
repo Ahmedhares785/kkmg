@@ -1,0 +1,112 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+body{
+    background:linear-gradient(black,purple) ;
+    height: 100%;
+    font-family: system-ui;
+}
+section{
+    background: url(stars1.png);
+    height: 100vh;
+   display: flex;
+   justify-content: center;
+   align-items: center;
+}
+ul{
+    text-align: center;
+    
+}
+ul li{
+    list-style: none;
+    margin: 14px 0;
+}
+
+ul li a{
+    color: white;
+text-decoration: none;
+font-weight: 500;
+letter-spacing: 4px;
+background: black;
+padding: 6px 16px;
+border-radius: 20px;
+display: inline-block;
+width: 250px;
+transition: 0.5s;
+text-transform: uppercase;
+position: relative;
+z-index: 10;
+}
+ul:hover li a{
+ opacity: 0;
+}
+ul li a:hover{
+transform: scale(1.5);
+background: black;
+opacity: 1;
+}
+ul li::after{
+    content:attr(data-text);
+    position: absolute;
+    left: 50%;
+    top: 30%;
+    transform: translate(-50%,-50%);
+    font-size: 80px;
+    font-weight: 900;
+    text-transform: uppercase;
+    opacity: 0;
+    pointer-events: none;
+    letter-spacing: 50px;
+    transition: 0.5s;
+    color: wheat;
+}   
+ul li:hover:after{
+    opacity: 0.6;
+    letter-spacing: 7px;
+}
+ul li::before{
+content: "";
+width: 180px;
+height: 80px;
+position: absolute;
+background: white;
+top: 50%;
+left: 50%;
+transform: translate(-50%,70%);    
+border-radius: 50%;
+box-shadow: 0 0 80px yellow;
+opacity: 0;
+transition: 0.5s;
+}
+ul li:hover::before{
+    opacity: .7;
+    transition: 0.5s;   
+    width: 80px;
+}
+p{
+    
+    margin-left:640px ;
+    padding: 6px 16px;
+    color: white;
+    font-size:35px ;
+    text-decoration: none;
+    display: inline-block;
+    text-transform: uppercase;
+    width: 200px;
+    background: black;
+    border-radius: 20px;
+    transition: 0.5s;
+    overflow: hidden;
+   
+    
+    
+}
+a p:hover{
+    transform: scale(1.5);
+    background: red;
+    
+}
+
+/* صنع بواسطة احمد حارس
+    

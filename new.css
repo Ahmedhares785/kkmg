@@ -1,0 +1,103 @@
+*{margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+.container{
+    background: #000;
+    min-height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  width: 80%;
+  margin: auto;
+  padding: 20px 0;
+}
+.logo{
+    width: 40px;
+    transition: .5s;
+}
+.container a .logo:hover{
+    scale: 2;
+}
+ul li{
+    display: inline-block;
+}
+
+ul li a{
+    text-decoration: none;
+    color: #fff;
+margin: 0 10px;
+transition: .5s;
+}
+header ul li a:hover{
+    color: red;
+    font-size: 30px;
+}
+.content{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 80%;
+    margin: auto;
+}
+.content .text {
+    color: #fff;
+    width: 40%;
+}
+.content .text h2{
+    font-size: 40px;
+    text-transform: uppercase;
+}
+.content .text p{
+    font-size: 18px;
+    margin: 20px 0 ;
+}
+.container .text a {
+    font-size: 20px;
+    text-decoration: none;
+    color: #000;
+background: white;
+padding: 8px 15px;
+border-radius: 40%;
+transition: .5s;
+}
+.container .text a:hover{
+    font-size: 30PX;
+}
+
+.content .image {
+    width: 30%;
+}
+.content .image img{
+    width: 180px;
+}
+.items {
+    position: absolute;
+    bottom: 20px;
+    left: 50%;
+    transform: translateX(-50%);
+}
+.items img {
+    width: 70px;
+    transition: .5s;
+}
+.items img:hover{
+    transform: scale(1.2);
+    cursor: pointer;
+}
+@media (max-width: 1080px){
+    .content, header{
+        flex-direction: column;
+        justify-content: center;
+    }
+    .content.image .content.text{
+    width: 80%;
+    }
+   
+    }
+    /*صنع بواسطة احمد حارس
